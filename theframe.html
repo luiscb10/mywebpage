@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Untitled 1</title>
+
+  <script>
+  function go(loc) {
+    alert(loc);
+	document.getElementById('calendar').src = loc;
+	
+  }
+  </script>
+</head>
+
+<body>
+  <iframe id="calendar" src="http://localhost:4848/extensions/credit_score/credit_score.html" width="1000" height="450" frameborder="0" scrolling="no" border=1></iframe>
+
+  <form method="post">
+    <input name="calendarSelection" type="radio" onselect="go('http://localhost:4848/extensions/credit_score/credit_score.html')" />Day
+    <input name="calendarSelection" type="radio" onselect="go('http://localhost:4848/extensions/Current_Loan/Current_Loan.html')" />Week
+    <input name="calendarSelection" type="radio" onselect="go('http://localhost:4848/extensions/Foreclosure_Stats/Foreclosure_Stats.html')" />Month
+	
+  </form>
+
+</body>
+
+</html>
