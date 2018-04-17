@@ -1,0 +1,17 @@
+#container{
+	width:960px;
+	margin:0px auto;
+}
+
+#left-column{
+	width:700px;
+	float:left;
+	background:blue;
+}
+
+#right-collumn{
+	width:260px;
+	float:left;
+	 background:orange;
+}
+
